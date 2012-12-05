@@ -6,11 +6,11 @@ jInfobar module for Joomla! 2.5
 
 Includes:
 ========
-  js/jquery.js
-  js/jquery.cookie.js (from https://github.com/carhartl/jquery-cookie)
-index.html
-mod_jinfobar.php
-mod_jinfobar.xml
+js/jquery.js<br />
+js/jquery.cookie.js (from https://github.com/carhartl/jquery-cookie)<br />
+index.html<br />
+mod_jinfobar.php<br />
+mod_jinfobar.xml<br />
 
 
 
