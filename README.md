@@ -25,4 +25,5 @@ How to "compile":
 ========
 Clone this git, get all the files (excluding this one) and make sure they are in
 a folder named mod_jInfobar. Then zip the folder and name it mod_jInfobar.
-Now you can install it in Joomla! 2.5
+Now you can install it in Joomla! 2.5<br />
+OR go to the download page and download the latest stable install .zip!
