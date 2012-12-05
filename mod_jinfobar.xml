@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <!-- Name of the Module -->
+        <name>jInfobar</name> 
+ 
+    <!-- Name of the Author -->
+        <author>Kevin Heruer</author> 
+ 
+    <!-- Version Date of the Module -->
+        <creationDate>2012-09-11</creationDate> 
+ 
+    <!-- Copyright information -->
+        <copyright>All rights reserved by Kevin Heruer 2012.</copyright> 
+ 
+    <!-- License Information -->
+        <license>CC 3.0 Unported</license> 
+ 
+    <!-- Author's email address -->
+        <authorEmail>k.heruer@gmail.com</authorEmail> 
+ 
+    <!-- Author's website -->
+        <authorUrl>www.laetificat.com</authorUrl> 
+ 
+    <!-- Module version number -->
+        <version>0.1.5</version> 
+ 
+    <!-- Description of what the module does -->
+        <description>Will add a dismissable notification bar at the top of the page with cookie reminder.<br />
+                     How to set up jInfobar:<br />
+                     1: Enable the module.<br />
+                     2: Give the bar a position, does not matter which.<br />
+                     3: Tweak the settings to your liking.</description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+        <files>
+        <!-- The "module" attribute signifies that this is the main controller file -->
+                <filename module="mod_jInfobar">mod_jinfobar.php</filename>
+                <filename>index.html</filename>
+		<filename>mod_jinfobar.xml</filename>
+                <folder>js</folder>
+        </files>
+
+        <config>
+            <fields name="params">
+            <fieldset name="basic" label="General options">
+                <field
+                    name="settext"
+                    type="text"
+                    filter="safehtml"
+                    size="80"
+                    rows="1"
+                    label="Set message:"
+                    description="Change the standard message in something you want."
+                    default="This site uses cookies." />
+                </fieldset>
+            </fields>
+
+            <fields name="params">
+            <fieldset name="basic" label="Set color">
+                <field
+                    name="setcolor"
+                    type="text"
+                    filter="safehtml"
+                    size="7"
+                    rows="1"
+                    label="Set background color:"
+                    description="Change the background color to a color you want. Needs to be CSS valid."
+                    default="orange" />
+                </fieldset>
+            </fields>
+
+            <fields name="params">
+            <fieldset name="basic" label="Set txtcolor">
+                <field
+                    name="settxtcolor"
+                    type="text"
+                    filter="safehtml"
+                    size="7"
+                    rows="1"
+                    label="Set text color:"
+                    description="Change the text color to a color you want. Needs to be CSS valid."
+                    default="white" />
+                </fieldset>
+            </fields>
+
+            <fields name="params">
+            <fieldset name="basic" label="Set transparency">
+                <field
+                    name="settransparency"
+                    type="text"
+                    filter="safehtml"
+                    size="3"
+                    rows="1"
+                    label="Set the transparency in %:"
+                    description="Change the background transparency of the bar."
+                    default="90" />
+                </fieldset>
+            </fields>
+            
+            <fields name="params">
+            <fieldset name="basic" label="Shadow" >
+                <field
+                    name="setshadow"
+                    type="radio"
+                    default="1"
+                    label="Show shadow?"
+                    description="Drop a shadow below the bar?">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+            </fieldset>
+            </fields>
+
+            <fields name="params">
+            <fieldset name="basic" label="Set cookie">
+                <field
+                    name="setcookietime"
+                    type="text"
+                    filter="safehtml"
+                    size="4"
+                    rows="1"
+                    label="Cookie expiration:"
+                    description="Set how many days until the cookie should expire, this cookie hides the bar automatically."
+                    default="7" />
+                </fieldset>
+            </fields>
+
+        </config>
+        
+    <!-- Optional parameters -->          
+        <params />
+</install>
