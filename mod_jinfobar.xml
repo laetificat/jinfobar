@@ -50,7 +50,7 @@
                     size="80"
                     rows="1"
                     label="Set message:"
-                    description="Change the standard message in something you want."
+                    description="Change the standard message in something you want, HTML supported."
                     default="This site uses cookies." />
                 </fieldset>
             </fields>
@@ -119,9 +119,51 @@
                     filter="safehtml"
                     size="4"
                     rows="1"
-                    label="Cookie expiration:"
+                    label="Cookie expiration in days:"
                     description="Set how many days until the cookie should expire, this cookie hides the bar automatically."
                     default="7" />
+                </fieldset>
+            </fields>
+
+            <fields name="params">
+            <fieldset name="basic" label="ImgTxt" >
+                <field
+                    name="imgtxt"
+                    type="radio"
+                    default="1"
+                    label="Show close image or text?"
+                    description="Show a custom closing image or use text instead.">
+                    <option value="1">Image</option>
+                    <option value="0">Text</option>
+                </field>
+            </fieldset>
+            </fields>
+
+            <fields name="params">
+            <fieldset name="basic" label="General options">
+                <field
+                    name="setclose"
+                    type="text"
+                    filter="safehtml"
+                    size="20"
+                    rows="1"
+                    label="Set close button message:"
+                    description="Change the standard message in something you want."
+                    default="" />
+                </fieldset>
+            </fields>
+
+            <fields name="params">
+            <fieldset name="basic" label="General options">
+                <field
+                    name="closeImage"
+                    type="text"
+                    filter="safehtml"
+                    size="80"
+                    rows="1"
+                    label="Set close button image:"
+                    description="Insert the direct url to the image you want to use(32x32 px)."
+                    default="" />
                 </fieldset>
             </fields>
 
