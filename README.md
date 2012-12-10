@@ -34,7 +34,7 @@ To do:
 ========
 - Fix transparency problem with text becoming transparent too<br />
 - Option for different text sizes<br />
-- Stop the bar from sliding up and setting a cookie when clicked on a link inside the bar<br />
+- [FIXED] Stop the bar from sliding up and setting a cookie when clicked on a link inside the bar<br />
 - Create a slider instead of manually typing in the background transparency<br />
 - Implent colorpickers<br />
 - Custom height and/or width<br />
